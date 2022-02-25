@@ -6,10 +6,17 @@
 # - stretch goal: try to implement this both with and without the .upper()/.lower() methods
 
 def func_1_methods(string):
-    pass
+    if len(string) % 2 == 0:
+        string = string.upper()
+    else:
+        string = string.lower()
+    return string
 
 def func_1_no_methods(string):
-    pass
+    if len(string) % 2 == 0:
+        string = string.upper()
+    else:
+        string = string.lower()
 
 # Challenge 2: write a function which:
 # - takes a word and a list of words as input
